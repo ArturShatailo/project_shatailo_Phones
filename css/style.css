@@ -1,0 +1,308 @@
+*,
+html,
+body {margin: 0px;padding: 0px;box-sizing: border-box;text-decoration: none; transition: 1s;}
+.header {width: 975px;height: 62px;position: relative;margin: 23px auto 16px;display: flex;justify-content: space-between;align-items: center;}
+.menu {display: flex;}
+.menu div {margin-right: 20px;border-right: 3px solid black;padding-right: 20px;}
+.menu :last-child {margin-right: 0;border-right: 0;}
+.menu div a {font-family: 'Montserrat', sans-serif;color: #565656;font-size: 22px;}
+.bossmenu {height: 870px;width: 100%;position: relative;display: flex;justify-content: center;align-items: center;background: -webkit-radial-gradient(top left, #00727c, #0dbca9)}
+
+.slide {position: absolute;width: 348px;height: 123px;top: 0px;right: 0px;background-color: antiquewhite;display: flex;}
+.bottom {width: 116px;height: 123px;display: flex;justify-content: center;align-items: center;}
+.ph {background-color: #04928f;}
+.tb { background-color: #038587;}
+.pc {background-color: #017c82;}
+.arrow {width: 0;height: 0;border: 14px solid transparent;position: absolute;top: 100%;border-bottom: 0;display: none;}
+.one {border-top-color: #04928f;}
+.two {border-top-color: #038587;}
+.tree {border-top-color: #017c82;}
+.ph:hover div {display: flex;}
+.tb:hover div {display: flex;}
+.pc:hover div {display: flex;}
+.im {width: 450px;height: 450px;background-image: url(../img/Shape522.png);animation: pulse 4s infinite linear;transition: 2s;transform: scale(1);position: relative;margin-top: 80px;}
+
+.phone1 {width: 256px;height: 446px;background-image: url(../img/1.png);margin-top: 60px;position: absolute;display: block;}
+.tablet1 {width: 330px;height: 500px;background-image: url(../img/tabletw.png);margin-top: 40px;position: absolute;display: none;}
+.pc1 {width: 400px;height: 236px;background-image: url(../img/pc1.png);margin-top: 60px;position: absolute;display: none;}
+.phoneandcir {position: relative;margin-left: -200px;display: flex;justify-content: center;align-items: center;}
+
+
+@keyframes pulse {
+    10% {transform: scale(0.9);}
+    20% {transform: scale(0.8);}
+    30% {transform: scale(0.7);}
+    40% {transform: scale(0.6);}
+    50% {transform: scale(0.5);}
+    75% {transform: scale(0.75);}
+    100% {transform: scale(1);}
+}
+
+.phone1:hover {animation: animat1 2s linear;transition: 2s;animation-fill-mode: forwards;display: block;transform: scale(1);}
+
+@keyframes animat1 {
+    25% {transform: scale(1.1);}
+    50% {transform: scale(1.2);}
+    75% {transform: scale(1.3);}
+    100% {transform: scale(1.4);background-image: url(../img/2.png);}}
+
+.tablet1:hover {animation: animat2 2s linear;transition: 2s;animation-fill-mode: forwards;display: block;transform: scale(1);}
+
+@keyframes animat2 {
+    25% {transform: scale(1.1);}
+    50% {transform: scale(1.2);}
+    75% {transform: scale(1.3);}
+    100% {transform: scale(1.3);background-image: url(../img/tabletw1.png);}}
+
+.pc1:hover {animation: animat3 2s linear;transition: 2s;animation-fill-mode: forwards;position: absolute;}
+
+@keyframes animat3 {
+    25% {transform: scale(1.1);}
+    50% {transform: scale(1.2);}
+    75% {transform: scale(1.3);}
+    100% {transform: scale(1.30);background-image: url(../img/pc12.png)}}
+.im2 {font-family: 'Montserrat', sans-serif;color: #FFF;font-size: 16px;opacity: 0.8;}
+.app {font-family: 'Montserrat', sans-serif;color: #FFF;font-size: 18px;width: 180px;text-transform: uppercase;display: flex;margin-top: 180px;align-items: center;font-weight: bolder}
+
+.earth {width: 55px;height: 55px;background-image: url(../img/Earth.png);margin-right: 12px;}
+.im2 h1 {text-transform: uppercase;color: white;margin-top: 80px;font-family: 'Montserrat', sans-serif;color: #FFF;font-size: 34px;text-transform: uppercase;font-weight: lighter;}
+
+.botbuy {width: 170px;height: 45px;display: flex;margin-top: 40px;}
+.buy {width: 55px;height: 45px;display: flex;justify-content: center;align-items: center;background-color: #259d8e;}
+.now {height: 45px;width: 115px;background-color: #54d3c3;display: flex;justify-content: center;align-items: center;color: white;font-size: 16px;}
+.infomain {width: 100%;height: 760px;display: flex;justify-content: center;}
+.info {width: 880px;height: 760px;font-family: 'Montserrat', sans-serif;color: #636363;font-size: 16px;opacity: 0.8;}
+.info h3 {font-size: 32px;text-align: center;margin-top: 50px;}
+.info p {font-size: 12px;text-align: center;margin-top: 30px;}
+.circleapp {display: flex;justify-content: center;margin-top: 45px;}
+.firsthalf {width: 481px; height: 421px; position: absolute;z-index: 20; background-image: url(../img/Shapehalf2.png)}
+.sechalf {width: 481px; height: 421px; position: absolute;z-index: 10;margin-left: 15px; background-image: url(../img/Shapehalf1.png)}
+.circleapp:hover .firsthalf {animation: scale12 1s linear;animation-fill-mode: forwards;}
+.circleapp:hover .sechalf {animation: scale13 1s linear;animation-fill-mode: forwards;}
+
+@keyframes scale12 {
+    20% {transform: scale(1.02);}
+    60% {transform: scale(1.06);}
+    100% {transform: scale(1.1);}}
+
+@keyframes scale13 {
+    20% {transform: scale(0.95);margin-left:}
+    60% {transform: scale(0.92);}
+    100% {transform: scale(0.89);}}
+
+.app1 {margin-top: 0px;margin-left: 50px;height: 200px;width: 220px;position: absolute;z-index: 50;font-size: 38px;display: flex;align-items: center;}
+.app1 div {margin-left: 0px;margin-top: 0px;background-image: url(../img/tabletsmal.png);width: 72px; height: 103px}
+.app1 p {font-size: 36px;margin-top: 330px;margin-left: -125px;color: white;}
+.app1 span {font-size: 62px;}
+.menudown {width: 100%;height: 170px;display: flex;justify-content: center;align-items: center;}
+.menudown div {width: 218px;height: 170px;position: relative;}
+.icon1 .iconcont {background: -webkit-radial-gradient(top left, #01646c 40%, #0dbca9);width: 1307px;height: 530px;top: 99%; left: 0px;}
+.icon1 div{width: 81px; height: 81px; background-image: url(../img/icon1.png); transform:scale(1); position: absolute; top:45px; left: 65px;}
+.icon1:hover .bigger {animation: big 2s infinite linear;}
+.icon1 .iconcont img {position: absolute;top: 120px;left: 172px;}
+.icon1 .iconcont h4 {font-size: 28px;position: absolute;top: 180px;right: 215px;text-transform: uppercase;font-family: 'Montserrat', sans-serif;color: white;font-weight: normal;}
+.icon1 .iconcont p {font-size: 14px;position: absolute;top: 222px;right: 240px;font-family: 'Montserrat', sans-serif;color: white;}
+.iconcont a div {background: #06ccb3;position: relative;width: 165px;height: 45px;top: 268px;left: 808px;display: flex;justify-content: flex-start;}
+.iconcont a div div {background: #3edac6;position: relative;width: 55px;height: 45px;left: 0px;top: 0px;display: flex;justify-content: center;align-items: center;}
+.iconcont a div div img {position: absolute;margin-top: -111px;margin-left: -158px}
+.iconcont a div p {position: absolute;left: 80px;margin-top: -208px;width: 80px}
+.icon2 .iconcont2 {position: absolute;width: 1307px;height: 530px;top: 99%;left: -218px;background: -webkit-radial-gradient(top left, #097b84 40%, #0dbca9);display: none;}
+.icon2 div {width: 71px; height: 82px; background-image: url(../img/icon2.png); transform:scale(1); position: absolute; top:45px; left: 65px;}
+.icon2:hover .bigger {animation: big 2s infinite linear;}
+.icon3 .iconcont3 {position: absolute;width: 1307px;height: 530px;top: 99%;left: -436px;background: -webkit-radial-gradient(top left, #118f99 40%, #0dbca9);display: none;}
+.icon3 div {width: 66px; height: 79px; background-image: url(../img/icon3.png); transform:scale(1); position: absolute; top:45px; left: 65px;}
+.icon3:hover .bigger {animation: big 2s infinite linear;}
+.iconcont3 .apple {position: absolute;top: 140px;left: 130px;transform: scale(0);}
+.iconcont3 .apple1 {position: absolute;top: 145px;left: 380px;transform: scale(0);}
+.iconcont3 .apple2 {position: absolute;top: 140px;left: 670px;transform: scale(0);}
+.iconcont3 .apple3 {position: absolute;top: 140px;left: 945px;transform: scale(0);}
+.icon3:hover .iconcont3 .apple {animation: appearapple 1s linear;animation-fill-mode: forwards;animation-delay: 0s;}
+.icon3:hover .iconcont3 .apple1 {animation: appearapple 1s linear;animation-fill-mode: forwards;animation-delay: 0.5s;}
+.icon3:hover .iconcont3 .apple2 {animation: appearapple 1s linear;animation-fill-mode: forwards;animation-delay: 1s;}
+.icon3:hover .iconcont3 .apple3 {animation: appearapple 1s linear;animation-fill-mode: forwards;animation-delay: 1.5s;}
+@keyframes appearapple {
+    20% {transform: scale(0.2);}
+    40% {transform: scale(0.4);}
+    60% {transform: scale(0.6);}
+    80% {transform: scale(0.8);}
+    100% {transform: scale(1.0);}
+}
+.icon4 .iconcont4 {position: absolute;width: 1307px;height: 530px;top: 99%;left: -654px;background: -webkit-radial-gradient(top left, #1da0aa 40%, #0dbca9);display: none;}
+.icon4 div {width: 79px; height: 71px; background-image: url(../img/icon4.png); transform:scale(1); position: absolute; top:45px; left: 65px;}
+.icon4:hover .bigger {animation: big 2s infinite linear;}
+.icon5 .iconcont5 {position: absolute;width: 1307px;height: 530px;top: 99%;left: -872px;background: -webkit-radial-gradient(top right, #29b7c2 40%, #0dbca9);display: none;}
+.icon5 div {width: 56px; height: 74px; background-image: url(../img/icon5.png); transform:scale(1); position: absolute; top:45px; left: 65px;}
+.icon5:hover .bigger {animation: big 2s infinite linear;}
+.icon6 .iconcont6 {position: absolute;width: 1307px;height: 530px;top: 99%;left: -1090px;background: -webkit-radial-gradient(bottom left, #0dbca9 40%, #3ccad5);display: none;}
+.icon6 div {width: 73px; height: 69px; background-image: url(../img/icon6.png); transform:scale(1); position: absolute; top:45px; left: 65px;}
+.icon6:hover .bigger {animation: big 2s infinite linear;}
+.menudown div:hover div {display: flex;}
+
+@keyframes big {
+    50% {transform: scale(1.5);}
+    100% {transform: scale(1);}
+}
+.icon1 {background-color: #01646c;}
+.icon2 {background-color: #097b84;}
+.icon3 {background-color: #118f99;}
+.icon4 {background-color: #1da0aa;}
+.icon5 {background-color: #29b7c2;}
+.icon6 {background-color: #3ccad5;}
+.footer {width: 100%;height: 512px;display: flex;justify-content: center;position: absolute;top: 2429px;}
+.blockone {width: 802px;height: 512px;margin-left: -253px;display: flex;justify-content: center;position: absolute;align-items: center;border-bottom: 2px solid grey;border-left: 2px solid grey;}
+
+.blockone p {text-transform: uppercase;font-family: 'Roboto Condensed', sans-serif;color: #49d7b0;font-weight: normal;font-size: 55px;text-align: center;width: 290px;}
+.blockone p span {font-size: 145px;font-weight: bolder;}
+.blocktwo {width: 504px;height: 512px;background-color: #49d7b0;margin-left: 800px;display: flex;justify-content: center;align-items: center;}
+.blocktwo:hover img {animation: big 2s infinite linear;}
+.footercopy {width: 100%;height: 100px;display: flex;justify-content: center;align-items: center;position: relative;top: 1040px;}
+.footercopy p {font-family: 'Roboto Condensed', sans-serif;color: grey;font-weight: normal;font-size: 22px;text-align: center;}
+
+
+
+
+
+@media screen and (max-width: 800px){
+.header {width: 100%;margin: 6px auto 6px;}
+.menu div {margin-right: 10px;}
+.menu :last-child {margin-right: 0;border-right: 0;}
+.menu div a {font-family: 'Montserrat', sans-serif;color: #565656;font-size: 16px;}
+.slide {position: absolute;width: 348px;height: 123px;top: 0px;right: 0px;background-color: antiquewhite;display: flex;}
+.bottom {width: 116px;height: 123px;display: flex;justify-content: center;align-items: center;}
+.ph {background-color: #04928f;}
+.tb { background-color: #038587;}
+.pc {background-color: #017c82;}
+.bossmenu{display: flex; justify-content: center; align-items: flex-start; height: 100vh;}
+.im {width: 200px;height: 200px;background-image: url(../img/Shape522s.png);animation: pulse 4s infinite linear;transition: 2s;transform: scale(1);position: relative;margin-top: 200px;}
+.phone1 {width: 100px;height: 174px;background-image: url(../img/1s.png);margin-top: 100px;position: absolute;display: block;}
+.tablet1 {width: 130px;height: 197px;background-image: url(../img/tabletws.png);margin-top: 100px;position: absolute;display: none;}
+.pc1 {width: 200px;height: 118px;background-image: url(../img/pc1s.png);margin-top: 120px;position: absolute;display: none;}
+.phoneandcir {margin-left: 0px;}
+@keyframes pulse {
+    25% {transform: scale(0.9);}
+    50% {transform: scale(0.8);}
+    75% {transform: scale(0.9);}
+    100% {transform: scale(1);}
+}
+.phone1:hover {animation: animat1 2s linear;animation-fill-mode: forwards;display: block;transform: scale(1);}
+@keyframes animat1 {
+    25% {transform: scale(1.03);}
+    50% {transform: scale(1.05);}
+    75% {transform: scale(1.08);}
+    100% {transform: scale(1.1);background-image: url(../img/2s.png);}}
+
+.tablet1:hover {animation: animat2 2s linear;transition: 2s;animation-fill-mode: forwards;display: block;transform: scale(1);}
+@keyframes animat2 {25% {
+    transform: scale(1.03);}
+    50% {transform: scale(1.05);}
+    75% {transform: scale(1.08);}
+    100% {transform: scale(1.1);background-image: url(../img/tabletw1s.png);}}
+
+.pc1:hover {animation: animat3 2s linear;transition: 2s;animation-fill-mode: forwards;position: absolute;}
+@keyframes animat3 {
+    25%{transform: scale(1.03);}
+    50% {transform: scale(1.05);}
+    75% {transform: scale(1.08);}
+    100% {transform: scale(1.1);background-image: url(../img/pc12s.png);}}
+.im2 {font-family: 'Montserrat', sans-serif;color: #FFF;font-size: 10px;opacity: 0.8;}
+.app {font-family: 'Montserrat', sans-serif;color: #FFF;font-size: 12px;width: 180px;text-transform: uppercase;display: flex;margin-top: 180px;align-items: center;font-weight: bolder}
+.im2 h1 {margin-top: 60px;;font-size: 20px;}
+.infomain {padding: 20px; height: 600px;}
+.info h3 {font-size: 22px;margin-top: 20px;}
+.info p {font-size: 10px;margin-top: 20px;}
+.circleapp {display: flex;justify-content: center;margin-top: 35px;}
+.firsthalf {width: 310px; height: 271px; background-image: url(../img/Shapehalf2s.png)}
+.sechalf {width: 310px; height: 271px; margin-left: 10px; background-image: url(../img/Shapehalf1s.png)}
+.app1 {margin-top: -20px;margin-left: 65px;height: 200px;width: 220px;position: absolute;z-index: 50;font-size: 38px;display: flex;align-items: center;}
+.app1 div {margin-left: 0px;margin-top: 0px;background-image: url(../img/tabletsmal.png);width: 72px; height: 103px}
+.app1 p {font-size: 16px;margin-top: 200px;margin-left: -90px;color: white;}
+.app1 span {font-size: 42px;}
+.menudown {height: 100px;}
+.menudown div {width: 100px;height: 100px;position: relative;}   
+.icon1 .iconcont {width: 600px;height: 530px;left: 0px;}
+.icon1 div {width: 60px; height: 60px; background-image: url(../img/icon1s.png);position: absolute;left: 20px; top:20px}
+.icon1 .iconcont img {top: 30px;left:2px;}
+.icon1 .iconcont h4 {font-size: 18px;top: 410px;right: 320px;}
+.icon1 .iconcont p {font-size: 10px;top: 442px;right: 320px;}
+.iconcont a div {top: 410px;left: 360px;}
+.iconcont a div div img {margin-top: -21px;margin-left: 12px}
+.iconcont a div p {position: absolute;left: 90px;margin-top: -425px;width: 60px}
+.icon2 div {width: 52px; height: 60px; background-image: url(../img/icon2s.png);position: absolute;left: 20px; top:20px}
+.icon2 .iconcont2 {left: -100px;width: 600px;height: 530px;}
+.icon3 .iconcont3 {left: -200px;width: 600px;height: 530px;}
+.icon3 div {width: 50px; height: 60px; background-image: url(../img/icon3s.png);position: absolute;left: 20px; top:20px}
+.iconcont3 .apple {top: 40px;left: 50px;}
+.iconcont3 .apple1 {top: 45px;left: 300px;}
+.iconcont3 .apple2 {top: 240px;left: 50px;}
+.iconcont3 .apple3 {top: 240px;left: 300px;}
+
+@keyframes appearapple {
+    20% {transform: scale(0.1);}
+    40% {transform: scale(0.2);}
+    60% {transform: scale(0.3);}
+    80% {transform: scale(0.4);}
+    100% {transform: scale(0.5);}
+}
+.icon4 .iconcont4 {left: -300px;width: 600px;height: 530px;}
+.icon4 div {width: 60px; height: 54px; background-image: url(../img/icon4s.png);position: absolute;left: 20px; top:20px}
+.icon5 .iconcont5 {left: -400px;width: 600px;height: 530px;}
+.icon5 div {width: 45px; height: 60px; background-image: url(../img/icon5s.png);position: absolute;left: 30px; top:20px}
+.icon6 .iconcont6 {left: -500px;width: 600px;height: 530px;}
+.icon6 div {width: 60px; height: 57px; background-image: url(../img/icon6s.png);position: absolute;left: 20px; top:20px}
+.footer {width: 100%;top: 1925px;}
+.blockone {width: 300px;left: 288px; border: 0px;}
+.blocktwo {width: 300px;height: 512px;left: -465px; position: absolute}
+.blocktwo:hover img {animation: none}
+}
+
+
+
+
+@media screen and (max-width: 420px){
+.header {width: 100%;margin: 6px auto 6px; display: flex; justify-content: space-between; }
+.menu {display: block;}
+.menu div {margin-right: 10px; border-left: 3px solid black; border-right: 0px solid black; padding-left: 50px;}
+.menu div a {font-size: 12px;}
+.slide{width: 375px;}
+.slide .bottom{width: 125px;}
+.bossmenu{display: flex; justify-content: center;}
+.im2{margin-left: -10px;font-size: 9px;}
+.phoneandcir {margin-left: -20px;}
+    .im{transform: scale(0.7)}
+
+@keyframes pulse {
+    10% {transform: scale(0.6);}
+    20% {transform: scale(0.5);}
+    30% {transform: scale(0.4);}
+    40% {transform: scale(0.4);}
+    50% {transform: scale(0.5);}
+    75% {transform: scale(0.6);}
+    100% {transform: scale(0.7);}
+}
+.footer {width: 300px;top: 1925px;}
+.blockone {width: 300px;left: 280px;border: 0px;}
+.blocktwo {display: none;}
+.blocktwo:hover img {animation: none}    
+
+    .menudown{display: block;}
+    .icon1 .iconcont {width: 100vw; height: 600px;left: 100px; top: 0px; }
+    .icon1 .iconcont img {display: none;}
+    .icon2 .iconcont2 {width: 100vw; height: 600px;left: 100px; top: -100px;}
+    .icon3 .iconcont3 {width: 100vw; height: 600px;left: 100px; top: -200px;}
+    .icon4 .iconcont4 {width: 100vw; height: 600px;left: 100px; top: -300px;}
+    .icon5 .iconcont5 {width: 100vw; height: 600px;left: 100px; top: -400px; background: -webkit-radial-gradient(top right, #0dbca9 40%, #29b7c2)}
+    .icon6 .iconcont6 {width: 100vw; height: 600px;left: 100px; top: -500px;background: -webkit-radial-gradient(bottom left, #3ccad5 40%, #0dbca9)}
+    
+    
+.icon1 .iconcont h4 {font-size: 18px;top: 180px;right: 155px;}
+.icon1 .iconcont p {font-size: 14px;top: 222px;right: 170px; text-align: center; left: 40px;}
+.iconcont a{height: 45px; position: absolute; top:380px; left: 45px;}
+.iconcont a div {top: 0px;left: 0px; text-align: right; display: flex; justify-content: flex-start;}
+.iconcont a div div img {position: absolute;margin-top: 11px;margin-left: 58px}
+.iconcont a div p {margin-top: -210px; margin-left: 28px;width: 80px;}
+    
+.iconcont3 .apple {top: -30px;left: 10px;}
+.iconcont3 .apple1 {top: 115px;left: 10px;}
+.iconcont3 .apple2 {top: 250px;left: 10px;}
+.iconcont3 .apple3 {top: 385px;left: 10px;}
+}
